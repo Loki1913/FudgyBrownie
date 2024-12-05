@@ -1,0 +1,127 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFF5F8;
+    color: #333;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #F2B8D6;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-left: 10px;
+}
+
+header .logo .fudgy {
+    font-size: 3rem;
+    color: #F8B400;
+    font-weight: bold;
+}
+
+header .logo .brownies {
+    font-size: 2rem;
+    color: #B06B4F;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F8F4F0;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #D4AF37;
+    text-transform: uppercase;
+}
+
+/* Estilos de la sección de valores */
+.section-values {
+    padding: 60px 40px;
+    background-color: #FDF2F8;
+    text-align: center;
+}
+
+.section-values h2 {
+    font-size: 2.5rem;
+    color: #F8B400;
+    margin-bottom: 40px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.value-card {
+    background-color: #FFFFFF;
+    border: 2px solid #F2B8D6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    color: #B06B4F;
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}

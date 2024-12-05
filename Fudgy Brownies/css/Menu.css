@@ -1,0 +1,81 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2D2D2D; /* Fondo oscuro */
+    color: #F2C9D0; /* Texto claro (rosado) */
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5em; /* Título más grande */
+    color: #F2C9D0;
+    margin-bottom: 20px; /* Separar el título del menú */
+}
+
+hr {
+    width: 80%; /* Línea horizontal más estrecha */
+    margin: 20px auto; /* Centrada y con espacio vertical */
+    border: 1px solid #F2C9D0; /* Color rosado */
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px; /* Espacio entre el título y el menú */
+}
+
+.menu-item {
+    background-color: #333; /* Fondo oscuro de cada item */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.item-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.item-info {
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #F2C9D0;
+}
+
+.price {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #F2C9D0;
+    border-radius: 5px;
+    background-color: #444;
+    color: #F2C9D0;
+    font-size: 1em;
+    text-align: center;
+}
+
+.price::placeholder {
+    color: #F2C9D0;
+    font-size: 1.1em;
+}

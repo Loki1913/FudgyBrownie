@@ -1,0 +1,121 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #F2B8D6;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-left: 10px;
+}
+
+/* Fudgy - Estilo del texto "Fudgy" */
+header .logo .fudgy {
+    font-size: 3rem; /* Más grande */
+    color: #F8B400;  /* Color diferente (puedes elegir el que más te guste) */
+    font-weight: bold;
+}
+
+/* Brownies - Estilo del texto "Brownies" */
+header .logo .brownies {
+    font-size: 2rem;  /* Un poco más pequeño */
+    color: #B06B4F;   /* Otro color para diferenciar */
+    font-weight: normal;
+}
+
+header .logo img {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+/* Estilos del menú de navegación */
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F8F4F0;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #D4AF37;
+    text-transform: uppercase;
+}
+
+/* Estilos del background de la sección */
+.section-background {
+    background-image: url('../img/Fondoprincipal.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-overlay {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para mejorar la visibilidad del texto */
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 20px;
+}
+
+.text-overlay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.text-overlay p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Asegura que la imagen de fondo cubra la pantalla */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo {
+        margin-bottom: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
